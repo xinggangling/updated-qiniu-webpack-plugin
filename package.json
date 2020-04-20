@@ -1,0 +1,44 @@
+{
+  "name": "updated-qiniu-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "./node_modules/.bin/rimraf lib && babel src --copy-files --out-dir lib",
+    "eslint": "eslint src",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinggangling/updated-qiniu-webpack-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xinggangling/updated-qiniu-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/xinggangling/updated-qiniu-webpack-plugin#readme",
+  "keywords": [
+    "qiniu",
+    "webpack",
+    "plugin"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*"
+    ]
+  },
+  "dependencies": {
+    "qiniu": "^7.3.0",
+    "slash": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.9.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "jest": "^25.4.0",
+    "rimraf": "^3.0.2"
+  }
+}
